@@ -1,0 +1,41 @@
+{
+  "name": "truffle-opensea-nft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "console": "truffle console",
+    "develop": "truffle develop",
+    "test": "truffle test",
+    "mint": "truffle exec ./scripts/MintNFTs.js",
+    "verify": "truffle run verify ERC721Basic ERC1155Basic",
+    "ipfs": "node ./IPFS/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YosephKS/truffle-nft-chainlink.git"
+  },
+  "author": "YosephKS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YosephKS/truffle-nft-chainlink/issues"
+  },
+  "homepage": "https://github.com/YosephKS/truffle-nft-chainlink#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "@openzeppelin/contracts-upgradeable": "^4.3.2",
+    "@openzeppelin/truffle-upgrades": "^1.10.0",
+    "axios": "^0.23.0"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.5.1",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "truffle-plugin-verify": "^0.5.20"
+  }
+}

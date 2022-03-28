@@ -1,0 +1,8 @@
+build
+client
+node_modules
+yarn.lock
+.secret
+.env
+yarn-error.log
+metadata/
